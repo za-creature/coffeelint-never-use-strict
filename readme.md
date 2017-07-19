@@ -10,15 +10,11 @@
 
 ## Usage
 
+Install as a dev dependency in your project:
+
 ```sh
 npm install --save-dev coffeelint-never-use-strict
 ```
-
-or
-
-```sh
-npm install --global coffeelint-never-use-strict
-````
 
 Add one of the following rules to your `coffeelint.json` file:
 
