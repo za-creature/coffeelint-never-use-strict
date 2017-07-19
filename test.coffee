@@ -26,24 +26,24 @@ coffeeCoverage.register({
 
 
 {nodes} = require "coffee-script"
-AlwaysUseStrict = require "./index.coffee"
+NeverUseStrict = require "./index.coffee"
 
 
 lint = (code) ->
-    linter = new AlwaysUseStrict()
+    linter = new NeverUseStrict()
     linter.errors = []
     linter.lintAST(nodes(code), {createError: (x) -> x})
     return linter.errors
 
 
-describe "always-use-strict", ->
-    it "complains when not in strict mode", ->
+describe "never-use-strict", ->
+    it "shuts up when not in strict mode", ->
         lint("""
             foo = ->
                 return 1
 
             foo()
-        """).should.have.length(1)
+        """).should.have.length(0)
 
         lint("""
             # asd
@@ -51,17 +51,17 @@ describe "always-use-strict", ->
                 return 1
 
             foo()
-        """).should.have.length(1)
+        """).should.have.length(0)
 
 
-    it "shuts up when in strict mode", ->
+    it "complains when in strict mode", ->
         lint("""
             "use strict"
             foo = ->
                 return 1
 
             foo()
-        """).should.have.length(0)
+        """).should.have.length(1)
 
         lint("""
             # some comment
@@ -70,4 +70,4 @@ describe "always-use-strict", ->
                 return 1
 
             foo()
-        """).should.have.length(0)
+        """).should.have.length(1)

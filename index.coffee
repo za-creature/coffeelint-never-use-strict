@@ -1,25 +1,24 @@
 "use strict"
-class AlwaysUseStrict
+class NeverUseStrict
     rule:
         name: "strict"
         level: "error"
         message: "Missing \"use strict\" statement"
         description: """
-            This rule triggers for each file that does not begin with
-            "use strict"
+            This rule triggers for each file that begins with "use strict"
 
-            See also coffeelint-never-use-strict
+            See also https://www.npmjs.com/package/coffeelint-always-use-strict
             """
 
     lintAST: ({expressions}, {createError}) ->
         [first, ...] = expressions
         if \
-                first.constructor.name isnt "Value" or \
-                first.base.constructor.name isnt "StringLiteral" or \
-                first.base.value not in ['"use strict"', "'use strict'"]
+                first.constructor.name is "Value" and \
+                first.base.constructor.name is "StringLiteral" and \
+                first.base.value in ['"use strict"', "'use strict'"]
             @errors.push(createError({
                 lineNumber: first.locationData.first_line + 1,
-                message: "Missing \"use strict\" at top of file"
+                message: "\"use strict\" is not allowed"
             }))
         undefined
-module.exports = AlwaysUseStrict
+module.exports = NeverUseStrict

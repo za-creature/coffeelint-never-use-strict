@@ -1,4 +1,4 @@
-# coffeelint-always-use-strict
+# coffeelint-never-use-strict
 
 [![NPM version][npm-image]][npm-url]
 [![Build Status][circle-image]][circle-url]
@@ -11,13 +11,13 @@
 ## Usage
 
 ```sh
-npm install --save-dev coffeelint-always-use-strict
+npm install --save-dev coffeelint-never-use-strict
 ```
 
 or
 
 ```sh
-npm install --global coffeelint-always-use-strict
+npm install --global coffeelint-never-use-strict
 ````
 
 Add one of the following rules to your `coffeelint.json` file:
@@ -26,7 +26,7 @@ Add one of the following rules to your `coffeelint.json` file:
 ```
 "strict": {
     "level": "error",
-    "module": "coffeelint-always-use-strict",
+    "module": "coffeelint-never-use-strict",
 },
 ```
 
@@ -51,17 +51,17 @@ or
 [coffeelint]: http://www.coffeelint.org
 [moz-strictmode-doc]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode
 
-[npm-url]: https://npmjs.org/package/coffeelint-always-use-strict
-[npm-image]: http://img.shields.io/npm/v/coffeelint-always-use-strict.svg
+[npm-url]: https://npmjs.org/package/coffeelint-never-use-strict
+[npm-image]: http://img.shields.io/npm/v/coffeelint-never-use-strict.svg
 
-[circle-url]: https://circleci.com/gh/za-creature/coffeelint-always-use-strict/tree/master
-[circle-image]: https://circleci.com/gh/za-creature/coffeelint-always-use-strict/tree/master.svg?style=shield
+[circle-url]: https://circleci.com/gh/za-creature/coffeelint-never-use-strict/tree/master
+[circle-image]: https://circleci.com/gh/za-creature/coffeelint-never-use-strict/tree/master.svg?style=shield
 
-[coveralls-url]: https://coveralls.io/r/za-creature/coffeelint-always-use-strict
-[coveralls-image]: https://coveralls.io/repos/za-creature/coffeelint-always-use-strict/badge.svg
+[coveralls-url]: https://coveralls.io/r/za-creature/coffeelint-never-use-strict
+[coveralls-image]: https://coveralls.io/repos/za-creature/coffeelint-never-use-strict/badge.svg
 
-[depstat-url]: https://david-dm.org/za-creature/coffeelint-always-use-strict
-[depstat-image]: https://david-dm.org/za-creature/coffeelint-always-use-strict.svg
+[depstat-url]: https://david-dm.org/za-creature/coffeelint-never-use-strict
+[depstat-image]: https://david-dm.org/za-creature/coffeelint-never-use-strict.svg
 
-[devdepstat-url]: https://david-dm.org/za-creature/coffeelint-always-use-strict#info=devDependencies
-[devdepstat-image]: https://david-dm.org/za-creature/coffeelint-always-use-strict/dev-status.svg
+[devdepstat-url]: https://david-dm.org/za-creature/coffeelint-never-use-strict#info=devDependencies
+[devdepstat-image]: https://david-dm.org/za-creature/coffeelint-never-use-strict/dev-status.svg
