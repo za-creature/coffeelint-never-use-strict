@@ -1,9 +1,8 @@
 machine:
-  post:
-    - npm install -g npm@3.x.x
+  node:
+      version: v6.1.0
 dependencies:
     override:
-        - npm prune
         - npm install
 test:
     override:
