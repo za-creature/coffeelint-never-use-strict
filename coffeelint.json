@@ -123,7 +123,7 @@
     "---------------------------CUSTOM MODULES---------------------------": 1,
 
     "strict": {
-        "module": "coffeelint-always-use-strict",
+        "module": "coffeelint-never-use-strict",
         "level": "error"
     },
     "advanced_colon_assignment_spacing": {

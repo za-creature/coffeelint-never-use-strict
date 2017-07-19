@@ -1,4 +1,3 @@
-"use strict"
 chai = require "chai"
 coffeeCoverage = require "coffee-coverage"
 path = require "path"

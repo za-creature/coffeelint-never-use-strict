@@ -1,4 +1,3 @@
-"use strict"
 class NeverUseStrict
     rule:
         name: "strict"
