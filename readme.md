@@ -31,7 +31,7 @@ or
 ```
 "strict": {
     "level": "error",
-    "module": "coffeelint-never-use-strict",
+    "module": "coffeelint-always-use-strict",
 },
 ```
 
