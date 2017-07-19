@@ -1,4 +1,6 @@
 {
+    "---------------------------BUILTIN RULES---------------------------": 1,
+
     "arrow_spacing": {
         "level": "warn"
     },
@@ -9,12 +11,18 @@
     "camel_case_classes": {
         "level": "warn"
     },
+    "coffeescript_error": {
+        "level": "error"
+    },
     "colon_assignment_spacing": {
         "spacing": {
             "left": 0,
             "right": 1
         },
         "level": "warn"
+    },
+    "cyclomatic_complexity": {
+        "level": "ignore"
     },
     "duplicate_key" : {
         "level": "error"
@@ -23,7 +31,7 @@
         "level": "error"
     },
     "ensure_comprehensions": {
-        "level": "ignore"
+        "level": "warn"
     },
     "eol_last": {
         "level": "warn"
@@ -40,12 +48,15 @@
         "value": 79,
         "level": "warn"
     },
+    "missing_fat_arrows": {
+        "level": "ignore"
+    },
     "newlines_after_classes": {
         "value": 2,
         "level": "ignore"
     },
     "no_backticks": {
-        "level": "warn"
+        "level": "error"
     },
     "no_debugger": {
         "level": "warn"
@@ -59,8 +70,14 @@
     "no_implicit_parens": {
         "level": "ignore"
     },
+    "no_interpolation_in_single_quotes": {
+        "level": "ignore"
+    },
     "no_nested_string_interpolation": {
         "level": "warn"
+    },
+    "no_plusplus": {
+        "level": "ignore"
     },
     "no_private_function_fat_arrows": {
         "level": "warn"
@@ -81,10 +98,17 @@
         "level": "warn"
     },
     "no_trailing_whitespace": {
-        "level": "warn"
+        "level": "warn",
+        "allowed_in_empty_lines": false
+    },
+    "no_unnecessary_double_quotes": {
+        "level": "ignore"
     },
     "no_unnecessary_fat_arrows": {
         "level": "warn"
+    },
+    "non_empty_constructor_needs_parens": {
+        "level": "ignore"
     },
     "prefer_english_operator": {
         "level": "error"
@@ -96,6 +120,12 @@
         "level": "warn"
     },
 
+    "---------------------------CUSTOM MODULES---------------------------": 1,
+
+    "strict": {
+        "module": "coffeelint-always-use-strict",
+        "level": "error"
+    },
     "advanced_colon_assignment_spacing": {
         "module": "coffeelint-advanced-colon-assignment-spacing",
         "level": "warn",
@@ -118,12 +148,10 @@
     "check_scope" : {
         "module":"coffeescope2",
         "level": "warn",
-        "environments": ["builtin","es5","browser","es6","node","mocha","shelljs","jquery"],
-        "globals": {},
+        "environments": ["builtin", "es5", "es6", "node", "mocha"],
         "overwrite": false,
         "shadow": true,
         "shadow_builtins": false,
-        "shadow_exceptions": ["err", "next"],
         "undefined": true,
         "hoist_local": false,
         "hoist_parent": true,

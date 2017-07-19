@@ -32,15 +32,13 @@
     "test-all": "mocha --opts mocha.opts --reporter mocha-junit-reporter test.coffee",
     "coverage": "istanbul report lcov"
   },
-  "dependencies": {
-    "coffeelint-always-use-strict": "latest"
-  },
   "devDependencies": {
     "chai": "^4.1.0",
     "coffee-coverage": "^2.0.1",
     "coffee-script": "^1.12.7",
     "coffeelint": "^1.16.0",
     "coffeelint-advanced-colon-assignment-spacing": "^1.0.0",
+    "coffeelint-always-use-strict": "latest",
     "coffeelint-braces-padding": "^0.1.5",
     "coffeelint-limit-newlines": "0.0.2",
     "coffeelint-no-code-after-return": "0.0.4",

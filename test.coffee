@@ -9,7 +9,7 @@ chai.should()
 
 coverageVar = coffeeCoverage.findIstanbulVariable()
 
-    
+
 coffeeCoverage.register({
     instrumentor: "istanbul"
     basePath: __dirname
