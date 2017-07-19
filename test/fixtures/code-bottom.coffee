@@ -1,2 +1,0 @@
-(-> somecode())
-'use strict'
