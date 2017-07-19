@@ -40,9 +40,9 @@ or
 [MIT License](http://en.wikipedia.org/wiki/MIT_License) ©
 
 * [Radu Dan](https://github.com/za-creature) (2017 -)
-* [Jan Raasch](http://janraasch.com) (2014-2017, [original](original)),
+* [Jan Raasch](http://janraasch.com) (2014-2017, [original][original-repo]),
 
-[original]: https://github.com/janraasch/coffeelint-use-strict
+[original-repo]: https://github.com/janraasch/coffeelint-use-strict
 
 [coffeelint]: http://www.coffeelint.org
 [moz-strictmode-doc]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode
